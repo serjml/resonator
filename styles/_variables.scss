@@ -1,0 +1,25 @@
+@use 'helpers' as *;
+
+:root {
+  --color-light: #ffffff;
+  --color-dark: #000000;
+  --color-gray: #8e8b8c;
+  --color-gray-light: #cccccc;
+  --color-gray-dark: #969696;
+
+  --border-radius: #{rem(16)};
+
+  --shadow: 0 0 0 #{rem(3)} var(--color-gray);
+
+  --font-family-base: 'Open Sans', sans-serif;
+  --font-family-accent: 'Lato', sans-serif;
+
+  --container-width: #{rem(1300)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+
+  @include laptop {
+    --container-width: #{rem(1080)};
+  }
+}
