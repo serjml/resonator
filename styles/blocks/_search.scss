@@ -29,4 +29,26 @@
       color: currentColor;
     }
   }
+
+  &__button {
+    --pointBgColor: var(--color-dark);
+
+    @include hover {
+      --pointBgColor: var(--color-accent);
+    }
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(5);
+    background-color: transparent;
+    border: none;
+
+    &-point {
+      @include square(rem(5));
+
+      background-color: var(--pointBgColor);
+      border-radius: 50%;
+      transition-duration: var(--transition-duration);
+    }
+  }
 }

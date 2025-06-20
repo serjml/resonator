@@ -377,6 +377,31 @@ a[class] {
 .search__input::placeholder {
   color: currentColor;
 }
+.search__button {
+  --pointBgColor: var(--color-dark);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.3125rem;
+  background-color: transparent;
+  border: none;
+}
+@media (any-hover: hover) {
+  .search__button:hover {
+    --pointBgColor: var(--color-accent);
+  }
+}
+@media (any-hover: none) {
+  .search__button:active {
+    --pointBgColor: var(--color-accent);
+  }
+}
+.search__button-point {
+  width: 0.3125rem;
+  height: 0.3125rem;
+  background-color: var(--pointBgColor);
+  border-radius: 50%;
+  transition-duration: var(--transition-duration);
+}
 
 .header {
   padding-block: 2.875rem;
