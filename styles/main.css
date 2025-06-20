@@ -351,6 +351,32 @@ a[class] {
   max-width: clamp(5.875rem, 5.2696078431rem + 2.4836601307vw, 8.25rem);
 }
 
+.search__form {
+  display: flex;
+  align-items: center;
+  column-gap: 2.375rem;
+}
+.search__field {
+  display: flex;
+  align-items: center;
+  column-gap: 0.375rem;
+}
+.search__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search__input {
+  border: none;
+  color: var(--color-dark);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+.search__input::placeholder {
+  color: currentColor;
+}
+
 .header {
   padding-block: 2.875rem;
   background-color: transparent;

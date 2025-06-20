@@ -1,1 +1,31 @@
 @use '../helpers' as *;
+
+.search {
+  &__form {
+    display: flex;
+    align-items: center;
+    column-gap: rem(38);
+  }
+
+  &__field {
+    display: flex;
+    align-items: center;
+    column-gap: rem(6);
+  }
+
+  &__label {
+    @include flex-center;
+  }
+
+  &__input {
+    border: none;
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: rem(15);
+    line-height: 1.4;
+
+    &::placeholder {
+      color: currentColor;
+    }
+  }
+}
