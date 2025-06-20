@@ -34,26 +34,31 @@
             </li>
           </ul>
         </nav>
-        <search>
-          <form>
-            <label for="search"></label>
+        <search class="header__search search">
+          <form class="search__form">
+            <label class="search__label" for="search"></label>
             <input
-              class="header__search"
+              class="search__input"
               type="search"
               name="search"
               placeholder="Search"
               id="search"
             />
-            <button class="header__button" type="submit" aria-label="Search" title="Search">
-              <span class="header__button-point"></span>
-              <span class="header__button-point"></span>
-              <span class="header__button-point"></span>
-              <span class="header__button-point"></span>
-              <span class="header__button-point"></span>
-              <span class="header__button-point"></span>
-              <span class="header__button-point"></span>
-              <span class="header__button-point"></span>
-              <span class="header__button-point"></span>
+            <button
+              class="header__search-button search__button"
+              type="submit"
+              aria-label="Search"
+              title="Search"
+            >
+              <span class="search__button-point"></span>
+              <span class="search__button-point"></span>
+              <span class="search__button-point"></span>
+              <span class="search__button-point"></span>
+              <span class="search__button-point"></span>
+              <span class="search__button-point"></span>
+              <span class="search__button-point"></span>
+              <span class="search__button-point"></span>
+              <span class="search__button-point"></span>
             </button>
             <button
               class="header__burger-button burger-button visible-mobile"

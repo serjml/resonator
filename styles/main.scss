@@ -3,3 +3,7 @@
 @use 'variables';
 @use 'utils';
 @use 'globals';
+
+@use 'blocks/logo';
+@use 'blocks/burger-button';
+@use 'blocks/header';
