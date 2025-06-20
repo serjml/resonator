@@ -354,7 +354,7 @@ a[class] {
 .search__form {
   display: flex;
   align-items: center;
-  column-gap: 2.375rem;
+  column-gap: 1.125rem;
 }
 .search__field {
   display: flex;
@@ -367,6 +367,7 @@ a[class] {
   align-items: center;
 }
 .search__input {
+  max-width: 4.0625rem;
   border: none;
   color: var(--color-dark);
   font-weight: 700;
