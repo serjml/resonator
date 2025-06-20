@@ -9,5 +9,65 @@
     <title>Resonator</title>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="/" class="header__logo logo" aria-label="Home" title="Home">
+          <img src="./images/logo.svg " alt="" class="logo__image" width="132" height="20" />
+        </a>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link is-active">Homes</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Pages</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Podcast</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Blog</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+        <search>
+          <form>
+            <label for="search"></label>
+            <input
+              class="header__search"
+              type="search"
+              name="search"
+              placeholder="Search"
+              id="search"
+            />
+            <button class="header__button" type="submit" aria-label="Search" title="Search">
+              <span class="header__button-point"></span>
+              <span class="header__button-point"></span>
+              <span class="header__button-point"></span>
+              <span class="header__button-point"></span>
+              <span class="header__button-point"></span>
+              <span class="header__button-point"></span>
+              <span class="header__button-point"></span>
+              <span class="header__button-point"></span>
+              <span class="header__button-point"></span>
+            </button>
+            <button
+              class="header__burger-button burger-button visible-mobile"
+              type="button"
+              aria-label="Open menu"
+              title="Open menu"
+            >
+              <span class="burger-button__line"></span>
+              <span class="burger-button__line"></span>
+              <span class="burger-button__line"></span>
+            </button>
+          </form>
+        </search>
+      </div>
+    </header>
+  </body>
 </html>
