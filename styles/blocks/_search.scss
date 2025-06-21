@@ -5,6 +5,10 @@
     display: flex;
     align-items: center;
     column-gap: rem(18);
+
+    @include mobile {
+      column-gap: rem(6);
+    }
   }
 
   &__field {
@@ -33,15 +37,15 @@
   &__button {
     --pointBgColor: var(--color-dark);
 
-    @include hover {
-      --pointBgColor: var(--color-accent);
-    }
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: rem(5);
     background-color: transparent;
     border: none;
+
+    @include hover {
+      --pointBgColor: var(--color-accent);
+    }
 
     &-point {
       @include square(rem(5));
