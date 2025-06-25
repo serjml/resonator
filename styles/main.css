@@ -261,6 +261,10 @@ svg * {
   }
 }
 
+html:is-lock {
+  overflow: hidden;
+}
+
 body {
   font-size: clamp(0.875rem, 0.8112745098rem + 0.2614379085vw, 1.125rem);
   font-family: var(--font-family-base);
@@ -449,13 +453,13 @@ button[aria-label]:before {
 .burger-button.is-active .burger-button__line:first-child {
   rotate: 45deg;
   transform-origin: 0;
-  translate: 0.25em -0.1em;
+  translate: 0.25em -0.15em;
 }
 .burger-button.is-active .burger-button__line:nth-child(2) {
   rotate: -45deg;
 }
 .burger-button.is-active .burger-button__line:last-child {
-  rotate: 0;
+  width: 0;
 }
 .burger-button__line {
   width: 100%;
