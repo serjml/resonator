@@ -1,0 +1,25 @@
+@use '../helpers' as *;
+
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(80);
+    padding-block: rem(130);
+  }
+
+  &__heading {
+    display: flex;
+    // column-gap: fluid(185, 16);
+    column-gap: 9.6vw;
+  }
+
+  &__title {
+    max-width: rem(605);
+    width: 100%;
+    color: inherit;
+  }
+}

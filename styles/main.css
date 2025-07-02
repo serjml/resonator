@@ -267,9 +267,15 @@ html:is-lock {
 
 body {
   font-size: clamp(0.875rem, 0.8112745098rem + 0.2614379085vw, 1.125rem);
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-family-base);
   color: var(--color-dark);
   background-color: var(--color-light);
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1,
@@ -565,6 +571,26 @@ button[aria-label]:before {
   .header__menu-link:active::after {
     width: 100%;
   }
+}
+
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+  padding-block: 8.125rem;
+}
+.footer__heading {
+  display: flex;
+  column-gap: 9.6vw;
+}
+.footer__title {
+  max-width: 37.8125rem;
+  width: 100%;
+  color: inherit;
 }
 
 /*# sourceMappingURL=main.css.map */
