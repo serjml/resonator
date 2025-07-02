@@ -614,5 +614,21 @@ button[aria-label]:before {
 .footer__menu-contacts a {
   text-decoration: none;
 }
+.footer__extra {
+  display: flex;
+  column-gap: 8.3125rem;
+  margin-left: clamp(20.625rem, 20.0355392157rem + 2.4183006536vw, 22.9375rem);
+  font-size: 0.8125rem;
+}
+.footer__terms-and-conditions-link, .footer__privacy-policy-link {
+  width: 13.5625rem;
+}
+.footer__copyright {
+  width: 18.9375rem;
+  color: var(--color-gray-dark);
+}
+.footer__copyright--light {
+  color: var(--color-gray-light);
+}
 
 /*# sourceMappingURL=main.css.map */

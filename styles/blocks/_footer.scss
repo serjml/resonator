@@ -42,4 +42,25 @@
       text-decoration: none;
     }
   }
+
+  &__extra {
+    display: flex;
+    column-gap: rem(133);
+    margin-left: fluid(367, 330);
+    font-size: rem(13);
+  }
+
+  &__terms-and-conditions-link,
+  &__privacy-policy-link {
+    width: rem(217);
+  }
+
+  &__copyright {
+    width: rem(303);
+    color: var(--color-gray-dark);
+
+    &--light {
+      color: var(--color-gray-light);
+    }
+  }
 }
