@@ -573,6 +573,11 @@ button[aria-label]:before {
   }
 }
 
+.soc1ials__list {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
 .footer {
   background-color: var(--color-dark);
   color: var(--color-light);
@@ -585,12 +590,29 @@ button[aria-label]:before {
 }
 .footer__heading {
   display: flex;
-  column-gap: 9.6vw;
+  align-items: center;
+  column-gap: 11.5625rem;
 }
 .footer__title {
   max-width: 37.8125rem;
   width: 100%;
   color: inherit;
+}
+.footer__menu {
+  display: flex;
+  column-gap: 8.3125rem;
+  margin-left: clamp(20.625rem, 20.0355392157rem + 2.4183006536vw, 22.9375rem);
+  color: var(--color-gray-light);
+}
+.footer__menu-column {
+  width: 12.25rem;
+}
+.footer__menu-title {
+  color: inherit;
+  margin-bottom: 2.125rem;
+}
+.footer__menu-contacts a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

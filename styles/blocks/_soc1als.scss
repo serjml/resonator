@@ -1,0 +1,8 @@
+@use '../helpers' as *;
+
+.soc1ials {
+  &__list {
+    display: flex;
+    column-gap: rem(20);
+  }
+}

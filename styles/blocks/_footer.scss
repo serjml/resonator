@@ -13,13 +13,33 @@
 
   &__heading {
     display: flex;
-    // column-gap: fluid(185, 16);
-    column-gap: 9.6vw;
+    align-items: center;
+    column-gap: rem(185);
   }
 
   &__title {
     max-width: rem(605);
     width: 100%;
     color: inherit;
+  }
+
+  &__menu {
+    display: flex;
+    column-gap: rem(133);
+    margin-left: fluid(367, 330);
+    color: var(--color-gray-light);
+
+    &-column {
+      width: rem(196);
+    }
+
+    &-title {
+      color: inherit;
+      margin-bottom: rem(34);
+    }
+
+    &-contacts a {
+      text-decoration: none;
+    }
   }
 }
