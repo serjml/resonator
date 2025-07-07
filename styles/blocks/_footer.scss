@@ -1,41 +1,96 @@
 @use '../helpers' as *;
 
 .footer {
+  $columnGapMenuAndExtra: #{rem(133)};
+
   background-color: var(--color-dark);
   color: var(--color-light);
+
+  @include laptop {
+    $columnGapMenuAndExtra: #{rem(40)};
+  }
 
   &__inner {
     display: flex;
     flex-direction: column;
     row-gap: rem(80);
-    padding-block: rem(130);
+
+    @include laptop {
+      padding-block: rem(70);
+      row-gap: rem(60);
+    }
+
+    @include mobile {
+      padding-block: rem(40);
+      row-gap: rem(20);
+    }
   }
 
   &__heading {
     display: flex;
     align-items: center;
     column-gap: rem(185);
+
+    @include tablet {
+      column-gap: rem(115);
+    }
   }
 
   &__title {
     max-width: rem(605);
-    width: 100%;
     color: inherit;
+
+    @include mobile {
+      @include visually-hidden;
+    }
   }
 
   &__menu {
     display: flex;
-    column-gap: rem(133);
+    column-gap: $columnGapMenuAndExtra;
     margin-left: fluid(367, 330);
     color: var(--color-gray-light);
 
+    @include laptop {
+      font-size: rem(14);
+    }
+
+    @include tablet {
+      justify-content: center;
+      margin-left: 0;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(20);
+    }
+
     &-column {
       width: rem(196);
+
+      @include laptop {
+        width: rem(150);
+      }
+
+      @include mobile {
+        display: flex;
+        align-items: center;
+        column-gap: rem(20);
+        width: auto;
+      }
     }
 
     &-title {
       color: inherit;
       margin-bottom: rem(34);
+
+      @include laptop {
+        font-size: rem(14);
+      }
+
+      @include mobile {
+        margin-bottom: 0;
+      }
     }
 
     &-contacts a {
@@ -45,19 +100,39 @@
 
   &__extra {
     display: flex;
-    column-gap: rem(133);
+    column-gap: $columnGapMenuAndExtra;
     margin-left: fluid(367, 330);
     font-size: rem(13);
+
+    @include tablet {
+      justify-content: center;
+      margin-left: 0;
+    }
+
+    @include mobile {
+      display: flex;
+      align-items: center;
+      column-gap: rem(20);
+      width: auto;
+    }
   }
 
   &__terms-and-conditions-link,
   &__privacy-policy-link {
     width: rem(217);
+
+    @include laptop {
+      width: rem(150);
+    }
   }
 
   &__copyright {
     width: rem(303);
     color: var(--color-gray-dark);
+
+    @include laptop {
+      width: rem(160);
+    }
 
     &--light {
       color: var(--color-gray-light);
