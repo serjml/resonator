@@ -90,6 +90,14 @@
 
       @include mobile {
         margin-bottom: 0;
+        min-width: rem(127);
+      }
+    }
+
+    &-contacts {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
       }
     }
 

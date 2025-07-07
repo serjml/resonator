@@ -678,6 +678,13 @@ button[aria-label]:before {
 @media (width <= 47.99875rem) {
   .footer__menu-title {
     margin-bottom: 0;
+    min-width: 7.9375rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .footer__menu-contacts {
+    display: flex;
+    flex-direction: column;
   }
 }
 .footer__menu-contacts a {
