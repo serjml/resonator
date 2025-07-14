@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.button {
+  display: inline-flex;
+  width: rem(185);
+  height: rem(54);
+  column-gap: rem(10);
+  align-items: center;
+  padding-inline: rem(20);
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border-radius: rem(30);
+
+  &__value {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    font-size: rem(12);
+  }
+
+  &__title {
+    font-size: rem(14);
+  }
+}

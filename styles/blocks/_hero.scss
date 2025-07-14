@@ -1,0 +1,31 @@
+@use '../helpers' as *;
+
+.hero {
+  min-height: rem(900);
+  margin-top: rem(-120);
+  background: url('../../images/hero/bg.jpg') no-repeat left top / cover #e0dcdb;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(50);
+    padding-block: 220px;
+  }
+
+  &__title {
+    max-width: rem(580);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(14);
+  }
+
+  &__subtitle {
+    font-size: rem(19);
+  }
+
+  &__button-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: rem(30);
+  }
+}

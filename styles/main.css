@@ -731,4 +731,52 @@ button[aria-label]:before {
   color: var(--color-gray-light);
 }
 
+.button {
+  display: inline-flex;
+  width: 11.5625rem;
+  height: 3.375rem;
+  column-gap: 0.625rem;
+  align-items: center;
+  padding-inline: 1.25rem;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border-radius: 1.875rem;
+}
+.button__value {
+  display: flex;
+  flex-direction: column;
+}
+.button__subtitle {
+  font-size: 0.75rem;
+}
+.button__title {
+  font-size: 0.875rem;
+}
+
+.hero {
+  min-height: 56.25rem;
+  margin-top: -7.5rem;
+  background: url("../../images/hero/bg.jpg") no-repeat left top/cover #e0dcdb;
+}
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.125rem;
+  padding-block: 220px;
+}
+.hero__title {
+  max-width: 36.25rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.875rem;
+}
+.hero__subtitle {
+  font-size: 1.1875rem;
+}
+.hero__button-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 1.875rem;
+}
+
 /*# sourceMappingURL=main.css.map */
