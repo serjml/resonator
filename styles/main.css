@@ -392,6 +392,11 @@ button[aria-label]:before {
   align-items: center;
   column-gap: 0.375rem;
 }
+@media (width > 47.99875rem) {
+  .search__field {
+    z-index: 1;
+  }
+}
 .search__label {
   display: flex;
   justify-content: center;
@@ -404,6 +409,7 @@ button[aria-label]:before {
   font-weight: 700;
   font-size: 0.9375rem;
   line-height: 1.4;
+  background-color: transparent;
 }
 .search__input::placeholder {
   color: currentColor;
@@ -415,6 +421,20 @@ button[aria-label]:before {
   gap: 0.3125rem;
   background-color: transparent;
   border: none;
+}
+@media (width <= 47.99875rem) {
+  .search__button {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+  }
 }
 @media (any-hover: hover) {
   .search__button:hover {
@@ -489,7 +509,6 @@ button[aria-label]:before {
   align-items: center;
   column-gap: 1rem;
   max-width: calc(114.25rem + 2.875rem * 2);
-  padding-inline: clamp(1.625rem, 1.306372549rem + 1.3071895425vw, 2.875rem);
 }
 @media (width <= 47.99875rem) {
   .header__overlay {
@@ -756,7 +775,7 @@ button[aria-label]:before {
 .hero {
   min-height: 56.25rem;
   margin-top: -7.5rem;
-  background: url("../../images/hero/bg.jpg") no-repeat left top/cover #e0dcdb;
+  background: url("../../images/hero/bg.jpg") no-repeat center/cover #e0dcdb;
 }
 .hero__inner {
   display: flex;
@@ -769,6 +788,11 @@ button[aria-label]:before {
   display: flex;
   flex-direction: column;
   row-gap: 0.875rem;
+}
+@media (width <= 47.99875rem) {
+  .hero__title {
+    max-width: 100%;
+  }
 }
 .hero__subtitle {
   font-size: 1.1875rem;

@@ -15,6 +15,10 @@
     display: flex;
     align-items: center;
     column-gap: rem(6);
+
+    @include mobile-above {
+      z-index: 1;
+    }
   }
 
   &__label {
@@ -28,6 +32,7 @@
     font-weight: 700;
     font-size: rem(15);
     line-height: 1.4;
+    background-color: transparent;
 
     &::placeholder {
       color: currentColor;
@@ -42,6 +47,10 @@
     gap: rem(5);
     background-color: transparent;
     border: none;
+
+    @include mobile {
+      @include visually-hidden;
+    }
 
     @include hover {
       --pointBgColor: var(--color-accent);
