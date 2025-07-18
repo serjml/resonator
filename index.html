@@ -96,10 +96,10 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero__inner container">
           <div class="hero__title">
-            <h1 class="h1">New episode available now</h1>
+            <h1 class="h1" id="hero-title">New episode available now</h1>
             <div class="hero__subtitle">
               <p>Available on Apple Soundcast and Spotify.</p>
             </div>
@@ -122,6 +122,66 @@
             </a>
           </div>
         </div>
+      </section>
+      <section class="episode" aria-labelledby="episode-title">
+        <div class="episode__inner container">
+          <div class="episode__body">
+            <h2 class="episode__title" id="episode-title">
+              Best places to find design inspiration
+            </h2>
+            <div class="episode__mini-player mini-player">
+              <audio id="audio-player" src="/"></audio>
+              <button
+                class="play-button"
+                type="button"
+                aria-label="Play audio"
+                title="Play audio"
+              ></button>
+              <p class="mini-player__title"></p>
+              <div class="mini-player__body">
+                <span class="mini-player__category">Category</span>
+                <span class="mini-player__duration">0:13</span>
+              </div>
+            </div>
+            <div class="episode__description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip.
+              </p>
+              <p>
+                Ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <a class="episode__page-link page-link" href="/">
+              <span class="icon icon--right-arrow">Episode page</span></a
+            >
+          </div>
+          <img
+            class="episode__image"
+            src="./images/episode/1.jpg"
+            data-image-title="New episode"
+            alt="Canyon"
+            width="525"
+            height="519"
+            loading="lazy"
+          />
+        </div>
+        <!-- <article class="episode__player player">
+          <img
+            class="episode__image small-image"
+            src="./images/episodes/1.jpg"
+            alt=""
+            width="291"
+            height="291"
+            loading="lazy"
+          />
+          <div class="episode__heading">
+            <h3 class="episode__name">Timmy Mike: the nature of design</h3>
+          </div>
+        </article> -->
       </section>
     </main>
     <footer class="footer">
